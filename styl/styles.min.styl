@@ -1,0 +1,176 @@
+OS = 'OpenSans', sans-serif
+OSSB = 'OpenSans-Semibold', sans-serif
+OSB = 'OpenSans-Bold', sans-serif
+J = 'Jura', sans-serif
+myBrown = #d3b56a
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+	font-display: fallback;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans.eot');
+    src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans.woff2') format('woff2'),
+        url('../fonts/OpenSans.woff') format('woff'),
+        url('../fonts/OpenSans.ttf') format('truetype'),
+        url('../fonts/OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	font-display: fallback;
+}
+
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url('../fonts/OpenSans-Semibold.eot');
+    src: url('../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Semibold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Semibold.woff') format('woff'),
+        url('../fonts/OpenSans-Semibold.ttf') format('truetype'),
+        url('../fonts/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+	font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/JuraDemiBold.eot');
+    src: url('../fonts/JuraDemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/JuraDemiBold.woff2') format('woff2'),
+        url('../fonts/JuraDemiBold.woff') format('woff'),
+        url('../fonts/JuraDemiBold.ttf') format('truetype'),
+        url('../fonts/JuraDemiBold.svg#JuraDemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+	font-display: fallback;
+}
+
+@import '../css/_css/bootstrap.min.css'
+// @import '../css/_css/jquery.fancybox.min.css'
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-size: 18px
+	font-family: OS
+	background-color #fff
+	color #2a251d
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+section
+header
+footer
+	width 100%
+	display block
+.video-wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+.button
+	display block
+	margin 0 auto
+	border 4px outset rgb(216, 190, 123);
+	background-color: rgb(216, 190, 123);
+	width 100%
+	max-width: 365px;
+	height: 46px;
+	line-height: 36px;
+	text-decoration: none
+	text-align: center
+	transition: all .5s ease
+	&:focus
+		color initial 
+		text-decoration: none
+	&:hover
+		color initial 
+		text-decoration: none
+		background-color: rgb(216, 190, 123) - 15%
+		transform: translateY(-4px)
+	&-mail
+		color #fff
+		font-family: J
+		font-size: 24px
+		background-color: #568DCB
+		border: none
+		max-width 223px
+		height 36px
+		line-height 36px
+		&:focus
+			color #fff
+		&:hover
+			color #fff
+			background-color: #568DCB - 15%
+.general-title
+	text-align: center
+	font-size: 36px;
+	font-family: J
+	text-decoration: underline;
+	line-height: 0.833;
+	margin-bottom: 50px
+	span
+		text-decoration: none
+		color #d1a430
+		display: inline-block
+
+@import 'main/1.main'
+@import 'main/2.mail'
+@import 'main/3.for'
+@import 'main/4.plan'
+@import 'main/5.get'
+@import 'main/6.author'
+@import 'main/7.revs'
+@import 'main/8.last'
+@import 'main/9.footer'
+@import 'main/10.modal'
+@import 'main/11.politics'
+@import 'main/12.medias'
