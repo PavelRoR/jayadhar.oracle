@@ -57,7 +57,7 @@ myBrown = #d3b56a
 }
 
 @import '../css/_css/bootstrap.min.css'
-@import '../css/_css/jquery.fancybox.min.css'
+@import '../css/_css/intlTelInput.min.css'
 
 *
 	margin 0
@@ -69,7 +69,7 @@ body
 	background-color #fff
 	color #2a251d
 a
-	color: #fefefe
+	color #2a251d
 	&:focus
 		outline: 0
 	&:hover
@@ -141,10 +141,10 @@ footer
 	&-form
 		color #fff
 		font-family: J
-		font-size: 24px
+		font-size: 20px
 		background-color: #568DCB
 		border: none
-		max-width 223px
+		max-width 280px
 		height 36px
 		line-height 36px
 		&:focus
@@ -165,11 +165,39 @@ footer
 		text-decoration: none
 		color #d1a430
 		display: inline-block
+@import 'main/0.header'
+#main
+	padding 30px 0 60px
+	background-image url('../img/backs/for-bg.png')
+	background-repeat no-repeat
+	background-position: center top
+	background-size: cover
+	text-align: center
+	min-height calc(100vh - 224px)
+.main-subtitle-2
+	font-family: OSSB
+	font-size: 24px
+	margin-top: 60px
+.switch-date
+	font-family: OSB
+	display: inline-block
+.form-promo
+	width 100%
+	max-width 700px
+	margin 40px auto 0
+	padding 20px
+	border: 1px dashed #0a1938
+.inputrow
+	float left
+	margin-right: 30px
+	width 100%
+	max-width: 300px;
+.intl-tel-input
+	width 100%
 .input
 	display block
 	background-color: rgb(255, 255, 255);
 	width 100%
-	max-width: 223px;
 	padding 0 15px
 	height: 36px;
 	border-radius 0
@@ -276,17 +304,159 @@ input:-webkit-autofill
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
-
-@import 'main/0.header'
-@import 'main/1.main'
-@import 'main/2.mail'
-@import 'main/3.for'
-@import 'main/4.plan'
-@import 'main/5.get'
-@import 'main/6.author'
-@import 'main/7.revs'
-@import 'main/8.last'
-@import 'main/9.footer'
-@import 'main/10.modal'
+.button-download
+	margin-bottom: 40px
+.thanks-text
+	font-size: 20px
+	margin-bottom: 15px
+	font-family: OSSB
+	span
+		font-family: OSB
+		display block
+		color #d1a430
+		font-size: 28px
+		margin 10px 0 10px
+.bots
+	width 100%
+	max-width 560px
+	margin 20px auto 0
+	text-align: center
+	&-link
+		display: inline-block
+		width 25%
+		// height 60px
+		color: #ffffff
+		font-size: 14px
+		padding 30px 5px 10px
+		transition: all .4s ease
+		font-family: OSSB
+		background-repeat no-repeat
+		background-position: center top 10px
+		&-vk
+			background-color: #4D75A3
+			background-image url(../img/icons/vk.png)
+		&-tg
+			background-color: #11AADF
+			background-image url(../img/icons/tg.png)
+		&-wa
+			background-color: #0CB40C
+		&-ok
+			background-color: #FF9802
+			background-image url(../img/icons/ok.png)
+		&:focus
+			text-decoration: none
+			color #fff
+		&:hover
+			text-decoration: none
+			color: #fff
+			transform: translateY(-4px)
+		.fa
+			display block
+			font-size: 24px
+			margin-bottom: 2px
+.button-bots
+	margin-top: 40px;
+	max-width 480px
+	color #2a251d
 @import 'main/11.politics'
-@import 'main/12.medias'
+@import 'bonus/3.footer'
+
+@media screen and (min-width 2295px)
+	body
+		font-size: 20px
+	.container
+		width 1400px
+	.main-subtitle-2
+		margin-top: 100px
+	.button-download
+		margin-bottom: 80px
+@media screen and (max-width 1199px)
+	.contact
+		margin-left: 12px
+		&&-email
+			padding-left:  32px
+		&&-skype
+		&&-tel
+			padding-left: 27px
+@media screen and (max-width 991px)
+	header
+		margin-bottom: 10px
+	#logo
+		width: 100px;
+		height: 42px;
+		background-position: center
+		display block
+		float: none
+		margin 0 auto
+	.contacts
+		float: none
+		line-height: 16px
+		text-align: center
+	.contact
+		margin 5px 5px 0
+		display: inline-block
+		span
+			padding-left: 5px
+	.main-subtitle-2
+		margin-top: 20px
+@media screen and (max-width 767px)
+	.inputrow
+		float: none
+		margin 0 auto 10px
+	.button-form
+		float: none
+		margin 0 auto
+		max-width 367px
+	.checking
+		margin 10px auto 0
+@media screen and (max-width 485px)
+	header
+		margin-bottom: 0
+		padding 10px 0
+	.contact
+		line-height: 14px
+		font-size: 12px
+		&&-email
+			padding-left: 20px
+		&&-skype
+		&&-tel
+			padding-left: 17px
+	.main-subtitle-2
+		margin-top: 0
+		font-size: 24px
+	#main
+		padding-bottom: 40px
+		br
+			display: none
+	footer h5
+		font-size: 18px
+	.soc-buttons a
+		margin: 10px 5px
+	footer p
+		font-size: 12px
+	.checking .check-label
+		font-size: 12px
+	.button-download
+		margin-bottom: 30px
+	.bots-link
+		width 50%
+	.button-bots
+		margin-top: 30px
+		line-height: 1.2
+		padding 18px 10px
+@media screen and (max-width 385px)
+	#main
+		padding-bottom: 30px
+	.main-subtitle-2
+		font-size: 20px
+	.form-promo
+		margin-top: 30px
+	.button-download
+		margin-top: 20px
+	.thanks-text
+		font-size: 18px
+		margin-bottom: 5px
+	.bots
+		max-width 180px
+		&-link
+			width 100%
