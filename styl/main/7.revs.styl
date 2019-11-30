@@ -1,0 +1,52 @@
+#revs
+	padding 120px 0
+	background-image url(../img/backs/revs-bg.png)
+	background-repeat no-repeat
+	background-position: center right
+	// background-size: cover
+	position relative
+	z-index 4
+	margin-top -110px
+.carousel-inner > .item > a > .revs-img
+	display block
+	margin 0 auto
+	width 100%
+	max-width 690px
+	height 207px
+	border: 1px dashed #0a1938
+	object-fit: contain
+	object-position: center
+	background-color #fff
+.carousel-indicators
+	position: static
+	margin 10px auto 0
+	li
+		width: 7px
+		height 7px
+		background-color: #1C2C4C
+		border: 0
+		margin 0 5px
+		transition: all .4s ease
+		&.active
+			background-color: #FF6506
+			width: 7px
+			height 7px
+			border: 0
+			margin 0 5px
+.carousel-control
+	text-shadow: none
+	background-color: transparent
+	opacity 1
+	color #1C2C4C
+	font-size: 45px
+	line-height: 45px
+	font-family: OSB
+	top calc(50% - 45px)
+	transition: all .4s ease
+	&:focus
+		color #1C2C4C
+	&:hover
+		color #FF6506
+	&.left
+	&.right
+		background-image none

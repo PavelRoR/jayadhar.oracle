@@ -1,5 +1,16 @@
 //@prepros-prepend jquery-2.1.1.min.js
 //@prepros-prepend bootstrap.min.js
+//@prepros-prepend jquery.fancybox.min.js
+
+var isIE = false || !!document.documentMode;
+
+if (isIE) {
+    var head = document.getElementsByTagName("head")[0];
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "css/ie.min.css";
+    head.appendChild(link);
+}
 
 $(document).ready(function () {
 

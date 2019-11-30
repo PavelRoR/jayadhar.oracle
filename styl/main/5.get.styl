@@ -1,0 +1,41 @@
+#get
+	padding 110px 0
+	background-image url('../img/backs/get-bg.png')
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+	position relative
+	z-index 4
+	margin-top -110px
+.get-list
+	margin-bottom: 40px
+	li
+		list-style none
+		position relative
+		padding-left: 60px
+		min-height 45px
+		margin-bottom: 30px
+		display: flex
+		align-items: center
+		&:before
+			content: ''
+			display block
+			position: absolute
+			left 0
+			top 5px
+			border-radius: 50px
+			background-color: transparent
+			border: 3px solid #d6bc79
+			width 45px
+			height 45px
+		&:after
+			content: ''
+			display block
+			position: absolute
+			width 10px
+			height 20px
+			border-bottom: 3px solid #2d2b2c
+			border-right: 3px solid #2d2b2c
+			transform: rotate(45deg)
+			left 19px
+			top 17px
