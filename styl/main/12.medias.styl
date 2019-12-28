@@ -17,8 +17,9 @@
 		max-width 330px
 	.button-form
 		max-width:  260px
-	.mail-container-title::after
-		right 140px
+	.mail-container-title:after
+		top calc(100% - 78px)
+		right 40px
 	.modal-dialog
 		width 730px
 	.author-img
@@ -58,8 +59,8 @@
 		line-height: 16px
 	.mail-container-title
 		line-height: 1.6
-	.checking .check-label
-		line-height: 15px
+	// .checking .check-label
+	// 	line-height: 15px
 	#for
 		padding-top: 40px
 	.for-text
@@ -77,6 +78,12 @@
 		bottom: 15px
 		height 30px
 		width 30px
+	.switch-title
+	.switch-text
+		text-align: center
+	.switch-title
+		&:after
+			content none
 @media screen and (max-width 767px)
 	#main
 		padding 40px 0
@@ -159,8 +166,8 @@
 		padding 20px
 	.last-form-title
 		margin-bottom: 15px
-	.checking .check-label
-		line-height: 15px
+	// .checking .check-label
+	// 	line-height: 15px
 	footer
 		padding 15px 0
 @media screen and (max-width 485px)
@@ -205,6 +212,8 @@
 		font-size: 24px
 	footer
 		font-size: 12px
+	.checking .check-label
+		line-height: 15px
 @media screen and (max-width 385px)
 	#main
 	#for

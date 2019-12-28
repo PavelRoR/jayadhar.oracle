@@ -21,27 +21,30 @@ $(document).ready(function () {
             button = $('.button-form', this),
             switch_title = $('.switch-title'),
             switch_text = $('.switch-text'),
-            modal_text = $('.modal-text'),
-            last_container_title = $('.last-container-title'),
+            // modal_text = $('.modal-text'),
+            // last_container_title = $('.last-container-title'),
             currDate = new Date(),
             startDate = new Array(
-                new Date("September 19 2019 18:30 UTC+3"),
-                new Date("September 20 2019 18:30 UTC+3")),
+                new Date("January 22 2020 18:30 UTC+3"),
+                new Date("January 23 2020 18:30 UTC+3"),
+                new Date("January 24 2020 18:30 UTC+3")),
             endDate = new Array(
-                new Date("September 19 2019 21:00 UTC+3"),
-                new Date("September 20 2019 21:00 UTC+3")),
+                new Date("January 22 2020 21:00 UTC+3"),
+                new Date("January 23 2020 21:00 UTC+3"),
+                new Date("January 24 2020 21:00 UTC+3")),
             rooms = new Array(
-                'https://start.bizon365.ru/room/18087/herbal_science',
-                'https://start.bizon365.ru/room/18087/herbal_science_d2');
+                '',
+                '',
+                '');
 
         function roomSwitch() {
-            modal_text.hide();
-            last_container_title.hide();
-            switch_title.removeClass('hide').html('А Вы записались на БЕСПЛАТНЫЙ ВЕБИНАР?<br>ЖДЕМ ТОЛЬКО ВАС!');
+            $('.mail-container .col-md-6').removeClass('col-sm-6');
+            $('.mail-container-title').css('marginLeft', '0');
+            switch_title.html('А Вы записались на БЕСПЛАТНЫЙ ВЕБИНАР?<br>ЖДЕМ ТОЛЬКО ВАС!').css('lineHeight', '1.2');
             switch_text.removeClass('hide').html('<span class="hurryup">Скорее ЗАХОДИТЕ прямо СЕЙЧАС на вебинар!</span><br>Присоединяйтесь к интенсиву и окунитесь в мир практической философии! Познайте этот мир и себя в нём!');
             button.text('Зайти!');
         }
-        if ((currDate > startDate[0] && currDate < endDate[0]) || (currDate > startDate[1] && currDate < endDate[1])) {
+        if ((currDate > startDate[0] && currDate < endDate[0]) || (currDate > startDate[1] && currDate < endDate[1]) || (currDate > startDate[2] && currDate < endDate[2])) {
             roomSwitch();
         }
         $(".form").on("submit", function () {
@@ -72,6 +75,9 @@ $(document).ready(function () {
                 }
                 if (currDate > startDate[1] && currDate < endDate[1]) {
                     window.open(rooms[1]);
+                }
+                if (currDate > startDate[2] && currDate < endDate[2]) {
+                    window.open(rooms[2]);
                 }
                 button.text('Отправляем...');
                 setTimeout(function () {
