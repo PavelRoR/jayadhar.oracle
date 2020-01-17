@@ -1,0 +1,72 @@
+-full_1 = '16 900р.';
+-full_2 = '25 900р.';
+-sale_1 = '3 000р.';
+-sale_2 = '6 000р.';
+-today_1 = '13 900р.';
+-today_2 = '19 900р.';
+-link_1 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4376&clean=true&lg=ru';
+-link_2 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4380&clean=true&lg=ru';
+-prep_bonus = '1 000р.'
+-prep_cred = '2 000р.'
+-prep_link = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4385&clean=true&lg=ru'
+
+section#prices
+	.container
+		+gt('','Выберите свой пакет участия:')
+		.packets
+			.row
+				.col-md-6.col-sm-6
+					.packet
+						.packet-head
+							h4.packet-head-title
+								small пакет
+								| «Эконом» 
+						.packet-body
+							ul.packet-body-list
+								li 11 онлайн-уроков
+									span.more-button(data-toggle="modal" data-target="#lessons") подробнее
+								li домашние задания с проверкой
+								li обратная связь
+								li скайп-чат
+						.packet-footer
+							p.cost.cost-today Стоимость:
+								span=today_1
+							p.cost.cost-sale Скидка:
+								span#sale-1=sale_1
+							p.cost.cost-today Стоимость сегодня:
+								span#today-1=today_1
+							+b('button-cost',link_1,'Выбрать','_blank','link-1')
+				.col-md-6.col-sm-6
+					.packet
+						.packet-head
+							h4.packet-head-title
+								small пакет
+								| «Премиум» 
+						.packet-body
+							ul.packet-body-list
+								li 11 онлайн-уроков
+									span.more-button(data-toggle="modal" data-target="#lessons") подробнее
+								li домашние задания с проверкой
+								li обратная связь
+								li скайп-чат
+								li колода карт оракула, а также иллюстрированная книга-руководство, облегчающая использование колоды
+						.packet-footer
+							p.cost.cost-today Стоимость:
+								span=today_2
+							p.cost.cost-sale Скидка:
+								span#sale-2=sale_2
+							p.cost.cost-today Стоимость сегодня:
+								span#today-2=today_2
+							+b('button-cost',link_2,'Выбрать','_blank','link-2')
+		.prepayment
+			h4.prepayment-title Акция!!!
+			p.prepayment-text Платите 1 000р., бонусом получаете 
+				span#prepayment-bonus= prep_bonus 
+				br
+				| На счет зачисляется 
+				span#prepayment-credited= prep_cred
+			a.button.prepayment-button(href= prep_link target="_blank")#prepayment-link Оплатить 1 000р.
+		.timer
+			h4.timer-title Скидка уменьшится через:
+			.clock
+			.clock-stop
