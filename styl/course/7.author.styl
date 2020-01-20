@@ -1,41 +1,83 @@
-// #author
-// 	padding 110px 0 130px
-// 	background-image: url('../img/backs/author-bg.png')
-// 	background-repeat no-repeat
-// 	background-position: center
-// 	background-size: 100% 100%
-// 	position relative
-// 	z-index 7
-// 	margin-top -110px
-// .author
-// 	&-img
-// 		width 234px
-// 		height 234px
-// 		background-image url(../img/images/adi.png)
-// 		background-repeat no-repeat
-// 		background-position: center
-// 		background-size contain
-// 	&-name
-// 		font-family: OSSB
-// 		margin-bottom: 22px
-// 		font-size: 18px
-// 	&-list
-// 		li
-// 			list-style: none
-// 			padding-left: 25px
-// 			margin-top: 5px
-// 			position relative
-// 			&:before
-// 				content: ''
-// 				display block
-// 				width 8px
-// 				height 8px
-// 				border-radius: 50px
-// 				background-color: #282016
-// 				position: absolute
-// 				left 0
-// 				top 10px
-// 	&-text
-// 		padding-top: 30px
-// 		border-top: 3px solid #DAB970
-// 		margin-top: 30px
+#author
+	padding 50px 0
+	background-color: #DBE2DF
+	background-image url('../img/backs/prices-bg-2.png')
+	background-repeat no-repeat
+	background-position: top -100px right
+.author
+	&-img
+		width 234px
+		height 234px
+		background-image url(../img/images/adi.png)
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
+	&-name
+		font-family: OSSB
+		margin-bottom: 22px
+		font-size: 18px
+	&-list
+		li
+			list-style: none
+			padding-left: 25px
+			margin-top: 5px
+			position relative
+			&:before
+				content: ''
+				display block
+				width 8px
+				height 8px
+				border-radius: 50px
+				background-color: #282016
+				position: absolute
+				left 0
+				top 10px
+	&-text
+		padding-top: 30px
+		border-top: 3px solid #DAB970
+		margin-top: 30px
+.general-title-revs
+	margin-top: 50px
+.carousel-inner > .item > a > .revs-img
+	display block
+	margin 0 auto
+	width 100%
+	max-width 690px
+	height 207px
+	border: 1px dashed #0a1938
+	object-fit: contain
+	object-position: center
+	background-color #fff
+.carousel-indicators
+	position: static
+	margin 10px auto 0
+	li
+		width: 7px
+		height 7px
+		background-color: #1C2C4C
+		border: 0
+		margin 0 5px
+		transition: all .4s ease
+		&.active
+			background-color: #FF6506
+			width: 7px
+			height 7px
+			border: 0
+			margin 0 5px
+.carousel-control
+	text-shadow: none
+	background-color: transparent
+	opacity 1
+	color #1C2C4C
+	font-size: 45px
+	line-height: 45px
+	font-family: OSB
+	top calc(50% - 45px)
+	transition: all .4s ease
+	&:focus
+		color #1C2C4C
+	&:hover
+		color #FF6506
+	&.left
+	&.right
+		background-image none

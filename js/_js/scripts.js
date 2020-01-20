@@ -33,9 +33,9 @@ $(document).ready(function () {
                 new Date("January 23 2020 21:00 UTC+3"),
                 new Date("January 24 2020 21:00 UTC+3")),
             rooms = new Array(
-                '',
-                '',
-                '');
+                'https://start.bizon365.ru/room/18087/shrimatrika_d1',
+                'https://start.bizon365.ru/room/18087/shrimatrika_d2',
+                'https://start.bizon365.ru/room/18087/shrimatrika_d3');
 
         function roomSwitch() {
             $('.mail-container .col-md-6').removeClass('col-sm-6');

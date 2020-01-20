@@ -1,0 +1,60 @@
+#about
+	padding 50px 0
+	background-image url('../img/backs/for-bg.png')
+	background-repeat no-repeat
+	background-position: top center
+	background-size: cover
+.about-title
+	font-size: 50px;
+	font-family: J
+	line-height: 1.2;
+	text-align: left;
+	padding: 10px  26px 10px 0
+	border-right: 3px solid #D8B976
+.about-bq
+	line-height: 28px
+	margin-top: 10px
+.general-title-about
+	margin-top: 50px
+.about-list
+	li
+		list-style none
+		position relative
+		padding-left: 60px
+		min-height 45px
+		margin-bottom: 30px
+		span
+			font-family: OSSB
+		&:before
+			content: ''
+			display block
+			position: absolute
+			left 0
+			top 5px
+			border-radius: 50px
+			background-color: transparent
+			border: 3px solid #d6bc79
+			width 45px
+			height 45px
+		&:after
+			content: ''
+			display block
+			position: absolute
+			font-family: J
+			font-size: 32px
+			// width 10px
+			// height 20px
+			// border-bottom: 3px solid #2d2b2c
+			// border-right: 3px solid #2d2b2c
+			// transform: rotate(45deg)
+			color #2d2b2c
+			left 14px
+			top 6px
+		&:nth-child(1):after
+			content: '1'
+		&:nth-child(2):after
+			content: '2'
+		&:nth-child(3):after
+			content: '3'
+		&:last-child
+			margin-bottom: 0

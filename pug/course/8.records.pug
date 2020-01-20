@@ -1,0 +1,30 @@
+section#records
+	.container
+		+gt('','Записи мастер-класса')
+		.row
+			.col-md-6.col-sm-6
+				.record
+					h4.record-title Запись мастер-класса от 22.01.20
+					.video-wrapper.video-wrapper-rec
+						iframe(src="https://player.vimeo.com/video/" allowfullscreen)
+					p.record-text Занятие состоится 22.01.20, в 19:00мск
+					p.record-text Запись занятия появтся здесь 23.01.20, после 13:00мск
+			.col-md-6.col-sm-6
+				.record
+					h4.record-title.record-title-1 Запись мастер-класса от 23.01.20
+					.video-wrapper.video-wrapper-rec
+						iframe(src="https://player.vimeo.com/video/" allowfullscreen)
+					p.record-text Занятие состоится 23.01.20, в 19:00мск
+					p.record-text Запись занятия появтся здесь 24.01.20, после 13:00мск
+		.row
+			.col-md-6.col-sm-6.col-md-offset-3.col-sm-offset-3
+				.record
+					h4.record-title.record-title-2 Запись мастер-класса от 24.01.20
+					.video-wrapper.video-wrapper-rec
+						iframe(src="https://player.vimeo.com/video/" allowfullscreen)
+					p.record-text Занятие состоится 24.01.20, в 19:00мск
+					p.record-text Запись занятия появтся здесь 25.01.20, после 13:00мск
+		p.records-text Записи занятий будут в свободном доступе до 28.01.20
+		+gt('hide','Записей мастер-класса более нет в свободном доступе')
+		p.records-text.hide Но Вы можете приобрести их полные версии всего за 590р. и радоваться жизни вместе с теми, кто их уже смотрел
+		+b('button-records-sale hide','#!','Купить записи', '_blank')
