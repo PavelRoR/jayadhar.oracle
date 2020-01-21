@@ -1,0 +1,196 @@
+#prices {
+  padding: 50px 0 90px;
+  background-color: #dbe2df;
+  background-image: url("../img/backs/prices-bg.png"), url("../img/backs/prices-bg-2.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom -150px left, top -100px right;
+}
+.packets {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.packet {
+  width: 100%;
+  max-width: 350px;
+  margin: 40px auto 0;
+  padding: 10px 20px;
+  background-color: rgba(255,255,255,0.8);
+  position: relative;
+}
+.packet:before,
+.packet:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(174deg, transparent 50%, rgba(255,255,255,0.8) 50%);
+  top: -40px;
+}
+.packet:after {
+  background-image: linear-gradient(-6deg, transparent 50%, rgba(255,255,255,0.8) 50%);
+  top: auto;
+  bottom: -40px;
+}
+.packet-head-title {
+  text-align: center;
+  font-size: 28px;
+  font-family: J;
+  color: #ffae79;
+}
+.packet-head-title small {
+  display: block;
+  font-size: 16px;
+  font-family: OS;
+  color: initial;
+}
+.packet-body {
+  padding: 10px 0 20px;
+  min-height: 283px;
+}
+.packet-body-list li {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 5px;
+  position: relative;
+}
+.packet-body-list li:before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background-color: #282016;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.more-button {
+  display: block;
+  font-size: 16px;
+  color: #aaa;
+  cursor: pointer;
+}
+.cost {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.cost span {
+  display: block;
+  font-size: 32px;
+  font-family: OSB;
+}
+.cost span.unbroken {
+  text-decoration: none;
+}
+.cost-full span {
+  text-decoration: line-through;
+}
+.cost-sale {
+  color: #f00;
+}
+.cost-today {
+  color: #008000;
+  margin-bottom: 20px;
+}
+.prepayment {
+  margin: 60px 0 40px;
+  text-align: center;
+}
+.prepayment-title {
+  font-size: 32px;
+  font-family: OSB;
+  color: #f00;
+}
+.prepayment-button {
+  margin-top: 20px;
+}
+.timer-title {
+  text-align: center;
+  font-size: 34px;
+  color: #f00;
+  font-family: OSB;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  padding: 10px;
+  width: 100%;
+  max-width: 360px;
+  margin: 40px auto 0;
+  border: 1px solid #ebccd1;
+  border-radius: 4px;
+  font-size: 24px;
+  text-align: center;
+}
+.flip-clock-wrapper {
+  width: 100%;
+  max-width: 460px;
+  margin-top: 40px;
+}
+.flip-clock-divider .flip-clock-label {
+  color: #000;
+}
+.flip-clock-dot {
+  background-color: #000;
+}
+.flip-clock-wrapper ul li a div div.inn {
+  color: #d8be7b;
+  background-color: #000;
+  text-shadow: none;
+}
+.modal-title {
+  font-size: 24px;
+  font-family: J;
+  width: 84%;
+  margin: 0 0 15px;
+}
+button.close {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-family: J;
+  color: #000;
+  background-color: #f0f0f0;
+  top: 10px;
+  right: 10px;
+  left: auto;
+  z-index: 99;
+  opacity: 1;
+  transition: all 0.1s ease-in-out;
+}
+button.close:hover {
+  color: #f0f0f0;
+  background-color: #000;
+}
+.modal-backdrop.in {
+  opacity: 0.8;
+}
+.modal-list li {
+  list-style: none;
+  padding-left: 19px;
+  margin-top: 10px;
+  position: relative;
+}
+.modal-list li span {
+  font-family: OSSB;
+}
+.modal-list li:before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background-color: #282016;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
